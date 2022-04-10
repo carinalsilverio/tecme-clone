@@ -175,14 +175,12 @@ iframe {
 
 .categorias {
     margin-top: 0;
-    margin-bottom: 10rem;       
+    margin-bottom: 15rem;       
 }
 
-.colunas-cat1, .colunas-cat2, .colunas-cat3, .colunas-cat4 {
+.colunas-categorias ul {
     columns: 2;
     margin-left: 0;
 }
-
-
 
 }
