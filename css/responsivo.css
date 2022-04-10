@@ -56,8 +56,13 @@ iframe {
 
 /*Vantagens*/
 
+.vantagens {
+    margin: 0;
+    padding: 2rem;
+}
 .primeiro-p {
     margin-top: 2rem;
+    margin-left: 0;
 }
 
 .vantagens h1 {
@@ -96,8 +101,8 @@ iframe {
     width: 100%;
     position: relative;
     margin: 0;
-    padding: 10px;
-    margin-bottom: 30rem;    
+    padding: 0;
+    margin-bottom: 28rem;    
 }
 
 /*Prêmios*/
@@ -122,15 +127,24 @@ iframe {
     width: 20rem;
 }
 
-.indicacao h1 {
+.indicacao h1 {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 24px;
 }
 
 .indicacao .p1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
 }
 
 .indicacao .p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
 }
 
@@ -138,13 +152,11 @@ iframe {
 
 .explorar {
     padding: 2rem;
-    margin-left: 0;
-    margin-bottom: 2rem;
+    margin-left: 0;    
 }
 
 .explorar h1 {
-    margin-top: 0;
-    margin-right: 20%;
+    margin-top: 0;    
     padding: 0;
     font-size: 24px;
 }
@@ -168,19 +180,72 @@ iframe {
 .exibir {
     font-size: 16px;
     margin-top: 2rem;
-    width: 60%;
+    width: 100%;
     margin-right: 50%;
 }
 /*Categorias*/
 
 .categorias {
     margin-top: 0;
-    margin-bottom: 15rem;       
+    margin-bottom: 22rem;   
+    margin-left: 0;
+    padding: 2rem;  
+    columns: 2;  
+}
+
+.categorias h2 {
+    font-size: 15px;
 }
 
 .colunas-categorias ul {
     columns: 2;
     margin-left: 0;
+    column-gap: 0;
+}
+.colunas-cat2, .colunas-cat3, .colunas-cat4 {
+    margin-bottom: 15rem;    
+    padding: 0; 
+}
+.colunas-cat2 {
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+.colunas-cat3 {
+    margin-top: -20rem;
+    margin-left: 0;    
+}
+
+.colunas-cat4 {
+    margin-top: -50rem;    
+    margin-left: 9rem;    
+}
+
+.footer-links {
+    margin-left: 0;
+    padding: 2rem;  
+    font-size: 10px;   
+}
+
+.img-links {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.copy {
+    width: 50%;
+}
+.separador {
+    padding: 0;
+}
+
+.footer-links-inf {
+    margin-left: auto;
+    padding: 2rem;    
 }
 
 }
