@@ -340,7 +340,11 @@ footer a {
 
 .footer-links-inf {
     margin-left: auto;
-    padding: 2rem;    
+    padding: 2rem;      
+}
+
+.footer-inf {
+    height: 0;
 }
 
 }
