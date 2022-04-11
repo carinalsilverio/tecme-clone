@@ -32,7 +32,7 @@ header {
     position: relative;
     display: block;
     margin-top: -2rem;
-    margin-left: 60%;
+    margin-left: 58%;
 }
 
 #btn-menu-mobile {
@@ -84,8 +84,7 @@ header {
 #menu {
     display: block;    
     position: absolute;
-    width: 100%; 
-    margin-top: 2rem;   
+    width: 100%;        
     right:0;   
     background: #F2F5F9;
     color: #1D242F;
@@ -96,15 +95,14 @@ header {
     overflow-y: hidden;
 }
 
-#nav.active #menu {    
-    margin-top: 2rem;
-    height: 28%;
+#nav.active #menu {      
+    height: 40%;
     visibility: visible;
     overflow-y: auto;
 }
 
 #menu a{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     margin: 0 1rem;
 }
 
