@@ -44,8 +44,7 @@ header ul {
     flex-direction: row;
     justify-content:space-between; 
     align-items: center;
-    width: 45%;
-    cursor: pointer;       
+    width: 45%;        
 }
 
 header ul li {
@@ -55,7 +54,8 @@ header ul li {
 }
 
 header ul li a {
-    align-items: center;     
+    align-items: center;  
+    cursor: pointer;      
 }
 
 .btn-entrar {
@@ -75,6 +75,10 @@ header ul li a {
 
 .btn-entrar:hover {
     opacity: 0.6;
+}
+
+#btn-menu-mobile {
+    display: none;
 }
 
 .video-explicativo h1 {
