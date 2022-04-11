@@ -36,7 +36,6 @@ header {
     position: absolute;
     cursor: pointer;
     margin-top: 2rem;
-
 }
 
 header ul {
@@ -75,6 +74,10 @@ header ul li a {
 
 .btn-entrar:hover {
     opacity: 0.6;
+}
+
+.icone-login {
+    display: none;
 }
 
 #btn-menu-mobile {

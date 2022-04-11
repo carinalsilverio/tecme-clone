@@ -12,30 +12,49 @@ body {
 
 /*Cabeçalho*/
 
+header {
+    height: 55rem;  
+    margin-top: 0;  
+}
+
 .btn-entrar {
-    display: none;
+    display: block;
+    background: transparent;  
+    margin-top: -2.4rem;
+    padding: 0.5rem;
+    margin-left: 65%;
+    margin-right: 15%;
+}
+
+.icone-login {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    display: block;
+    margin-top: -2rem;
+    margin-left: 60%;
 }
 
 #btn-menu-mobile {
     display: flex; 
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     float: right;    
     border: none;
     cursor: pointer;
-    gap: .5rem;    
+    gap: .5rem;   
+    background-color: transparent;  
+    color:#F2F5F9;         
 }
 
 #menu-mobile {
-    padding: 2rem
+    padding: 2rem;    
 }
 
 #hamburger { 
     display: block;
     border-top: 2px solid;   
-    color: #1D242F;
-    width: 20px;
-    float: right;        
-    
+    color: #F2F5F9;   
+    float: right;     
 }
 
 #hamburger::after, #hamburger::before {
@@ -46,7 +65,7 @@ body {
     background: currentColor; /*Pegar a cor definida no id*/
     margin-top: 5px;   
     transition: .3s; 
-    position: relative;
+    position: relative;    
 }
 
 #nav.active #hamburger {
@@ -87,11 +106,6 @@ body {
 #menu a{
     padding: 1rem 0;
     margin: 0 1rem;
-}
-
-header {
-    height: 65rem;  
-    margin-top: 0;  
 }
 
 .logo {
