@@ -1,8 +1,7 @@
 @media (max-width: 600px)
 {
 
-html {
-    /*background: #000;*/
+html {    
     overflow-x: hidden;
 }
 
@@ -109,7 +108,6 @@ header {
 .logo {
     margin-left: 2rem;
 }
-
 
 .video-explicativo h1 {
     width: 12rem;
@@ -316,6 +314,7 @@ iframe {
     margin-left: 9rem;    
 }
 
+/*Footer*/
 .footer-links {
     margin-left: 0;
     padding: 2rem;  
@@ -334,6 +333,8 @@ footer a {
 .copy {
     width: 50%;
 }
+
+/*Footer-Separador*/
 .separador {
     padding: 0;
 }
@@ -346,5 +347,381 @@ footer a {
 .footer-inf {
     height: 0;
 }
+}
 
+
+/**********************************************************************************************************************/
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+
+html {    
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*Cabeçalho*/
+
+header {
+    height: 65rem;  
+    margin-top: 0;  
+}
+
+.btn-entrar {
+    display: block;
+    background: transparent;  
+    margin-top: -0.5rem;
+    padding: 0.5rem;
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.icone-login {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    display: block;
+    margin-top: -2rem;
+    margin-left: 58%;
+}
+
+#btn-menu-mobile {
+    display: flex; 
+    padding: 0.5rem 0;
+    float: right;    
+    border: none;
+    cursor: pointer;
+    gap: .5rem;   
+    background-color: transparent;  
+    color:#F2F5F9;         
+}
+
+#menu-mobile {
+    padding: 2rem;    
+}
+
+#hamburger { 
+    display: block;
+    border-top: 2px solid;   
+    color: #F2F5F9;   
+    float: right;     
+}
+
+#hamburger::after, #hamburger::before {
+    content:'';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor; /*Pegar a cor definida no id*/
+    margin-top: 5px;   
+    transition: .3s; 
+    position: relative;    
+}
+
+#nav.active #hamburger {
+    border-top-color: transparent;       
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg)
+}
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+#menu {
+    display: block;    
+    position: absolute;
+    width: 100%;        
+    right:0;   
+    background: #F2F5F9;
+    color: #1D242F;
+    height: 0;    
+    z-index: 1000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#nav.active #menu {      
+    height: 40%;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#menu a{
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.video-explicativo h1 {
+    width: 95%;
+    margin-left: 0;
+    padding: 2rem;
+    font-size: 24px;
+}
+
+.video-explicativo p {
+    width: 95%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 2rem;
+    
+}
+
+.video-explicativo input {
+    width: 85%;
+    display: flex;    
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.btn-fazer-parte {
+    width: 90%;    
+    margin-top: 0.5rem;
+    display: flex;    
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;  
+}
+
+iframe {
+    display: flex;
+    float: none;
+    width: 90%;
+    height: 30rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/*Vantagens*/
+
+.vantagens {
+    margin: 0;
+    padding: 2rem;
+}
+.primeiro-p {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.vantagens h1 {
+    font-size: 24px;
+}
+
+.segundo-p {
+    margin-bottom: 2rem;
+}
+.vantagens-exclusivas {
+    margin: 0;
+}
+
+.vantagens-exclusivas h1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 24px;
+}
+
+.vantagens-exclusivas img {
+    margin-top: 0;     
+    height: 15rem;
+    width: 10rem; 
+    margin-left: 20%;
+}
+
+.vantagens-icones img {
+    margin-top: 1rem;
+}
+
+.vantagens-icones {
+    display: grid;     
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    justify-content: center;   
+    gap: 4rem;    
+}
+
+/*Prêmios*/
+
+.premios {
+    width: 100%;
+    height: 35rem;
+}
+
+.premios img {
+    height: 18rem;
+    width: 18rem;
+    margin-left: 90%;
+    margin-top: -18rem;
+    
+}
+
+.indicacao {
+    position: relative;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    margin-top: 25rem;
+    width: 65rem;
+}
+
+.indicacao h1 {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+}
+
+.indicacao .p1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.indicacao .p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/*Explorar*/
+
+.explorar {
+    padding: 2rem;
+    margin-left: 0;    
+}
+
+.explorar h1 {
+    margin-top: 0;    
+    padding: 0;
+    font-size: 24px;
+}
+
+.explorar p {
+    margin-bottom: 0;
+}
+
+.btn-explorar
+{   margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: 93%;
+}
+
+.explorar input {   
+    margin-left: 0;
+    margin-right: auto; 
+    width: 90%;   
+}
+
+.exibir {
+    font-size: 16px;
+    margin-top: 2rem;
+    width: 100%;
+    margin-right: 50%;
+}
+/*Categorias*/
+
+.categorias {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 10px 20px 0px 20px;
+    margin-left: 0;
+    gap: 0.6rem;
+    margin-bottom: 28rem;    
+
+}
+
+.categorias h2 {
+    font-size: 15px;
+}
+
+.colunas-categorias {
+    margin-top:0; 
+}
+
+.colunas-categorias ul {    
+    margin-left: 0;    
+    column-count: 1;   
+}
+
+.colunas-cat1 {
+    width: 50%;
+    padding: 10px;
+    height: 0;  
+    
+}
+.colunas-cat2 {
+    flex-wrap: wrap;
+    margin-left: 0;
+    width: 10%;
+    height: 23rem;
+}
+
+.colunas-cat3 {
+    flex-wrap: wrap;
+    margin-left: 0;
+    width: 5rem;
+    height: 23rem;
+}
+
+
+.colunas-cat4 {
+    flex-wrap: wrap;
+    margin-left: auto;
+    height: 23rem;   
+}
+
+/*Footer*/
+.footer-links {
+    margin-left: 0;
+    padding: 2rem;  
+    font-size: 10px;   
+}
+
+.img-links {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.copy {
+    width: 50%;
+}
+
+/*Footer-Separador*/
+.separador {
+    padding: 0;
+}
+
+.footer-links-inf {
+    margin-left: auto;
+    padding: 2rem;      
+}
+
+.footer-inf {
+    height: 0;
+}
 }
