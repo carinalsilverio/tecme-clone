@@ -25,7 +25,8 @@ header {
     background-image: linear-gradient(90deg, #0389F7 48%, #17DF79 120%);
     height: 32rem;
     color: #fff;  
-    width: 100%;
+    width: 100%;    
+    margin: 0 auto;    
     align-items: center;
     z-index: 1000;  
 }
@@ -43,7 +44,7 @@ header ul {
     flex-direction: row;
     justify-content:space-between; 
     align-items: center;
-    width: 45%;        
+    width: 45%;   
 }
 
 header ul li {
