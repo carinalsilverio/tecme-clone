@@ -12,7 +12,7 @@ Projeto pessoal para prática de HTML, CSS e JavaScript.
 ## 🛠️ Tecnologias
 - HTML
 - CSS
--JavaScript
+- JavaScript
 
 
 ## 📧 Contato
